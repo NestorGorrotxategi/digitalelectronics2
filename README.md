@@ -9,3 +9,6 @@
 ..* 1. Unordered item
 - List item 1
 - -List item 2
+> *this text is a quote written in italics*\
+[This is an inline/style link](http:www.google.com)
+What if I write down here?
