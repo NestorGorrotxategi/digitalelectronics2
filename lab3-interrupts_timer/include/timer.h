@@ -53,6 +53,13 @@
 /** @brief Set overflow 4s, prescaler // 101 --> 1024 */
 #define TIM1_overflow_4s()    TCCR1B &= ~(1<<CS11); TCCR1B |= (1<<CS12) | (1<<CS10);
 
+
+/** @brief Enable overflow interrupt, 1 --> enable */
+#define TIM1_overflow_interrupt_enable()  TIMSK1 |= (1<<TOIE1);
+/** @brief Disable overflow interrupt, 0 --> disable */
+#define TIM1_overflow_interrupt_disable() TIMSK1 &= ~(1<<TOIE1);
+
+
 /* Defines -----------------------------------------------------------*/
 /**
  * @name  Definitions for 8-bit Timer/Counter0
@@ -65,7 +72,7 @@
 /** @brief Set overflow 128us, prescaler 010 --> 8 */
 #define TIM0_overflow_128us()  TCCR0B &= ~((1<<CS02) | (1<<CS00)); TCCR0B |= (1<<CS01);
 /** @brief Set overflow 1ms, prescaler 011 --> 64 */
-#define TIM0_overflow_1ms() TCCR0B &= ~(1<<CS02); TCCR1B |= (1<<CS01) | (1<<CS00);
+#define TIM0_overflow_1ms() TCCR0B &= ~(1<<CS02); TCCR0B |= (1<<CS01) | (1<<CS00);
 /** @brief Set overflow 4ms, prescaler 100 --> 256 */
 #define TIM0_overflow_4ms()    TCCR0B &= ~((1<<CS01) | (1<<CS00)); TCCR0B |= (1<<CS02);
 /** @brief Set overflow 16ms, prescaler // 101 --> 1024 */
@@ -76,10 +83,6 @@
 /** @brief Disable overflow interrupt, 0 --> disable */
 #define TIM0_overflow_interrupt_disable() TIMSK0 &= ~(1<<TOIE0);
 
-/** @brief Enable overflow interrupt, 1 --> enable */
-#define TIM1_overflow_interrupt_enable()  TIMSK1 |= (1<<TOIE1);
-/** @brief Disable overflow interrupt, 0 --> disable */
-#define TIM1_overflow_interrupt_disable() TIMSK1 &= ~(1<<TOIE1);
 
 /**
  * @name  Definitions for 8-bit Timer/Counter0
