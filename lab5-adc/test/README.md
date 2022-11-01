@@ -1,4 +1,4 @@
-# Lab 5: INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAME
+# Lab 5: NESTOR GORROTXATEGI AGIRRE
 
 ### Analog-to-Digital Conversion
 
