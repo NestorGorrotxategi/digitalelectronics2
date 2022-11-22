@@ -79,7 +79,7 @@ lfsr4_fibonacci_asm:
                            ; +---+---+---+---+---+---+---+---+
                            ; | x | x | x | 3 | 2 | 1 | 0 | C | <-- C
                            ; +---+---+---+---+---+---+---+---+
-    andi in_out_reg, 0b00111111  ; Need only 4-bit, so clear four upper bits
+    andi in_out_reg, 0b00011111  ; Need only 4-bit, so clear four upper bits
                            ; in_out_reg:       3   2   1   0
                            ; +---+---+---+---+---+---+---+---+
                            ; | 0 | 0 | 0 | 0 | 2 | 1 | 0 | C |
