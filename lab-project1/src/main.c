@@ -73,7 +73,7 @@ int main(void)
 
     //Configure 16-bit Timer/Counter2 for the Encoder
     //We set prescaler to 33ms and enable overflow interrupt
-    TIM2_overflow_16ms();
+    TIM2_overflow_4ms();
     TIM2_overflow_interrupt_enable();
 
     // Enables interrupts by setting the global interrupt mask
