@@ -36,14 +36,14 @@ As we see in the picture above, we have used the following hardware for our proj
 * Reads digital data sent by Encoder (Displays "Rear Camera" if you push the incoder. If not it displays acceleration or decelration depending on the sense of rotation)
 * Reads the pushbutton from the Joystick( Displays "BUZZER" if the button is pushed)
 
-![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/TIMER2.jpg)
+![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/TIMER2.png)
 
 ### ISR(ADC_vect)
 
 * Interupt service which is responsible for displaying the direction accordingly to axis values of the joystick
 * Displays on the lcd the direction whick the joystick indicates(up-right, up-left, down-right ,down-left)
 
-![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/ADC_vect.jpg)
+![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/ADC_vect.png)
 
 
 
