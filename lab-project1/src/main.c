@@ -1,7 +1,7 @@
 /***********************************************************************
  * Teammates: 
  *    NESTOR GORROTXATEGI AGIRRE
- *    DRAGOS ...
+ *    DRAGOS BRATFALEAN
  *
  * Project 1
  * 
@@ -144,17 +144,6 @@ ISR(TIMER2_OVF_vect)
       //Read push button values
       Push_Joystick = GPIO_read(&PINB, JOYSTICK_PUSH);
       Push_Encoder = GPIO_read(&PINB, ENCODER_PUSH);
-      /*
-      itoa(Push_Joystick,string1, 10);
-      itoa(Push_Encoder, string2, 10);
-
-
-      lcd_clrscr();
-      lcd_gotoxy(8,0);
-      lcd_puts(string1);      
-      lcd_gotoxy(8,1);
-      lcd_puts(string2);
-      */
 
       if (Push_Joystick == 0){
             //Actions to be done if buttons are pushed
@@ -167,31 +156,27 @@ ISR(TIMER2_OVF_vect)
              lcd_puts("REAR CAMERA");   
       }else{
 
-      //Loop to know in which direction is encoder turning
-      aState = GPIO_read(&PINB, ENCODER_OA);
+        //Loop to know in which direction is encoder turning
+        aState = GPIO_read(&PINB, ENCODER_OA);
 
-      // If the previous and the current state of the outputA are different, that means a pulse has occured.
-      if(aLastState != aState){
-          lcd_clrscr();
-          bState = GPIO_read(&PINB, ENCODER_OB);
-        // Let's compare a and b states
-         if(aState != bState){
-        //If a and b states are different, this means encoder is rotating clockwise.
-          lcd_gotoxy(1, 1);
-          lcd_puts("Accelerate");
-        }else{
-          //Encoder is rotating counter clockwise.
-          lcd_gotoxy(1, 1);
-          lcd_puts("Deccelerate");   
-        }
-        aLastState = aState;
-      }  
+        // If the previous and the current state of the outputA are different, that means a pulse has occured.
+        if(aLastState != aState){
+            lcd_clrscr();
+            bState = GPIO_read(&PINB, ENCODER_OB);
+            // Let's compare a and b states
+           if(aState != bState){
+              //If a and b states are different, this means encoder is rotating clockwise.
+              lcd_gotoxy(1, 1);
+              lcd_puts("Accelerate");
+            }else{
+              //Encoder is rotating counter clockwise.
+              lcd_gotoxy(1, 1);
+              lcd_puts("Deccelerate");   
+            }
+          aLastState = aState;
+        }  
       
-    }
-
-    
-    
-   
+      }
     
 }
 
@@ -201,9 +186,7 @@ ISR(TIMER2_OVF_vect)
  **********************************************************************/
 ISR(ADC_vect)
 {
-    static uint8_t no_of_conversions = 0;
-    char string1[4];
-    char string2[4];    
+    static uint8_t no_of_conversions = 0; 
     
     //we will define two parameters to save joystick X and Y axis positions
     static uint16_t Vrx=0;
@@ -228,17 +211,6 @@ ISR(ADC_vect)
 
     if(no_of_conversions >= 2){
       no_of_conversions = 0; //Clear number of conversions
-      itoa(Vrx,string1, 10);
-      itoa(Vry, string2, 10);
-      lcd_clrscr();
-      lcd_gotoxy(1,0);
-      lcd_puts("Vrx");      
-      lcd_gotoxy(5,0);
-      lcd_puts(string1);
-      lcd_gotoxy(1,1);
-      lcd_puts("Vry");     
-      lcd_gotoxy(5,1);      
-      lcd_puts(string2);
     
       //Now that we have complete information about Joystick's position,
       //we need to understand and display it
