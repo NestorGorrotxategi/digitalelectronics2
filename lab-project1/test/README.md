@@ -6,7 +6,11 @@
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/Sin%20t%C3%ADtulo.png)
 
 As we see in the picture above, we have used the following hardware for our project:
-- Arduino Uno with AtmelMega328P MCU
+- Arduino Uno with AtmelMega328P MCU.
+- Joystick with 2ADC signals and a switch.
+- A rotary encoder with a switch.
+- Digilent PmodCLP LCD module.
+
 ## Software description
 ## Video
 ## References
