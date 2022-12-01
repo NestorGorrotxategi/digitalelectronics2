@@ -24,11 +24,17 @@ As we see in the picture above, we have used the following hardware for our proj
 
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/main.png)
 
+
+
+
 ### ISR(Timer1)
 
 * Interupt service which switches the ADC channel every 100 ms
 
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/TIMER1.jpg)
+
+
+
 
 ### ISR(Timer2)
 
@@ -37,6 +43,9 @@ As we see in the picture above, we have used the following hardware for our proj
 * Reads the pushbutton from the Joystick( Displays "BUZZER" if the button is pushed)
 
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/TIMER2.png)
+
+
+
 
 ### ISR(ADC_vect)
 
