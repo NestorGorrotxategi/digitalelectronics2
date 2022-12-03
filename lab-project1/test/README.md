@@ -59,17 +59,17 @@ The Digilent PmodCLP is a 16x2 character LCD used to display up to 32 different 
 For our project, we have used the following connections.
 
 For J1 bottom half pinout:
-- Pin 7: DB4 (PD4 pin 4 on Arduino Uno).
-- Pin 8: DB5 (PD5 pin 5 on Arduino Uno).
-- Pin 9: DB6 (PD6 pin 6 on Arduino Uno).
-- Pin 10: DB7 (PD7 pin 7 on Arduino Uno).
+- Pin 7: DB4 (**PD4 pin 4** on Arduino Uno).
+- Pin 8: DB5 (**PD5 pin 5** on Arduino Uno).
+- Pin 9: DB6 (**PD6 pin 6** on Arduino Uno).
+- Pin 10: DB7 (**PD7 pin 7** on Arduino Uno).
 
 For J2 pinout:
-- Pin 1: RS (PB0 pin 8 on Arduino Uno).
-- Pin 2: R/W (GND on breadboard).
-- Pin 3: E (PB1 pin 9 on Arduino Uno).
-- Pin 5: GND (GND on breadboard).
-- Pin 6: VCC (VCC on breadboard).
+- Pin 1: RS (**PB0 pin 8** on Arduino Uno).
+- Pin 2: R/W (**GND on breadboard**).
+- Pin 3: E (**PB1 pin 9** on Arduino Uno).
+- Pin 5: GND (**GND on breadboard**).
+- Pin 6: VCC (**VCC on breadboard**).
 
 ### Breadboard
 
@@ -78,7 +78,50 @@ It is a construction base used to create electronic circuits. In our project, we
 
 ## SOFTWARE DESCRIPTION
 
+Our project's library and source has the following structure:
+```
+├── lib
+│   └── lcd
+│       ├── lcd.c
+│       ├── lcd.h
+│       └── lcd_definitions.h
+└── src
+    └── main.c
 
+```
+
+### GPIO
+
+Some control registers from AVR MCU are defined in this library in order to make coding easier.
+
+This library is divided into two types of files: header files and source files.
+
+The first type usually contains definitions of data types, function prototypes, includes, definitions and C preprocessor commands. As it is indicated by its name, the extension of header file is **.h**. 
+
+Source file **.c** is used to implement the code.
+
+To implement this library in our code, we use #include directive. Then, whenever a function from this library is called, the control of the program is transferred to the function.
+
+Our GPIO library consists of:
+- [Header file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/gpio/gpio.h) gpio.h
+- [Library source](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/gpio/gpio.c) file gpio.c
+
+
+### LCD
+
+So as to make LCD registers and commands easier, we are using a LCD library file developped by Peter Fleury which consist of 3 files:
+
+- [Header file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd.h) lcd.h
+- [Source file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd.c) lcd.c
+- [Lcd definitions](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd_definitions.h) lcd_definitions.h
+
+## MAIN
+
+After defining libraries and timer files, we have created a main.c file inside src folder. Here is the main code of our project with includes, definitions, and functions:
+
+- [Main file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/src/main.c) main.c
+
+Here are the flowcharts of the main function and ISRs of our project.
 
 ### int main()
 
