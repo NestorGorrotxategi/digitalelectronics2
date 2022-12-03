@@ -112,26 +112,26 @@ The first type usually contains definitions of data types, function prototypes, 
 
 Source file **.c** is used to implement the code.
 
-To implement this library in our code, we use #include directive. Then, whenever a function from this library is called, the control of the program is transferred to the function.
+To implement this library in our code, we use ```#include``` directive. Then, whenever a function from this library is called, the control of the program is transferred to the function.
 
 Our GPIO library consists of:
-- [Header file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/gpio/gpio.h) gpio.h
-- [Library source](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/gpio/gpio.c) file gpio.c
+- [Header file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/gpio/gpio.h) gpio.h.
+- [Library source](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/gpio/gpio.c) file gpio.c.
 
 
 ### LCD
 
 So as to make LCD registers and commands easier, we are using a LCD library file developped by Peter Fleury which consist of 3 files:
 
-- [Header file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd.h) lcd.h
-- [Source file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd.c) lcd.c
-- [Lcd definitions](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd_definitions.h) lcd_definitions.h
+- [Header file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd.h) lcd.h.
+- [Source file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd.c) lcd.c.
+- [Lcd definitions](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd_definitions.h) lcd_definitions.h.
 
 ### MAIN
 
 After defining libraries and timer files, we have created a main.c file inside ```src``` folder. Here is the main code of our project with includes, definitions, and functions:
 
-- [Main file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/src/main.c) main.c
+- [Main file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/src/main.c) main.c.
 
 Here are the flowcharts of the main function and ISRs of our project.
 
@@ -170,8 +170,8 @@ Here are the flowcharts of the main function and ISRs of our project.
 
 ### ISR(ADC_vect)
 
-* Interupt service which is responsible for displaying the direction accordingly to axis values of the joystick,
-* Displays on the lcd the direction whick the joystick indicates(up-right, up-left, down-right ,down-left),
+* Interupt service which is responsible for displaying the direction accordingly to axis values of the joystick.
+* Displays on the lcd the direction whick the joystick indicates(up-right, up-left, down-right ,down-left).
 
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/ADC_vect.png)
 
@@ -189,8 +189,8 @@ Here is a video with the implementation of our project:
 We have used information available in information system as well as internet. Here are the links to visited websites:
 
 - [Joystick processing](https://create.arduino.cc/projecthub/MinukaThesathYapa/arduino-thumb-joystick-to-processing-92c182)
--[Analog Joystick](https://exploreembedded.com/wiki/Analog_JoyStick_with_Arduino)
--[Joystick description](https://navody.dratek.cz/navody-k-produktum/arduino-joystick-ps2.html)
--[Rotary Encoder](https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/)
--[Pmod Digilent](https://digilent.com/reference/pmod/pmodclp/start)
+- [Analog Joystick](https://exploreembedded.com/wiki/Analog_JoyStick_with_Arduino)
+- [Joystick description](https://navody.dratek.cz/navody-k-produktum/arduino-joystick-ps2.html)
+- [Rotary Encoder](https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/)
+- [Pmod Digilent](https://digilent.com/reference/pmod/pmodclp/start)
 
