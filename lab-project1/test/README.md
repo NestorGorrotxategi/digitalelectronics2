@@ -95,9 +95,7 @@ Our project's library and source has the following structure:
 
 ### GPIO
 
-Some control registers from AVR MCU are defined in this library in order to make coding easier.
-
-This library is divided into two types of files: header files and source files.
+Some control registers from AVR MCU are defined in this library in order to make coding easier. This library is divided into two types of files: header files and source files.
 
 The first type usually contains definitions of data types, function prototypes, includes, definitions and C preprocessor commands. As it is indicated by its name, the extension of header file is **.h**. 
 
