@@ -182,7 +182,7 @@ Here are the flowcharts of the main function and ISRs of our project.
 
 Here is a video with the implementation of our project:
 
-![Project Video](https://youtube.com/shorts/sMx07z7edAQ)
+[Project Video](https://youtube.com/shorts/sMx07z7edAQ)
 
 ## REFERENCES
 
