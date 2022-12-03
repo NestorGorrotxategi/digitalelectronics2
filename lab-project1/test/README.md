@@ -81,6 +81,9 @@ It is a construction base used to create electronic circuits. In our project, we
 Our project's library and source has the following structure:
 ```
 ├── lib
+│   ├── gpio
+│   │   ├── gpio.c
+│   │   └── gpio.h
 │   └── lcd
 │       ├── lcd.c
 │       ├── lcd.h
