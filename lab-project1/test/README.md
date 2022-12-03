@@ -168,4 +168,18 @@ Here are the flowcharts of the main function and ISRs of our project.
 
 
 ## VIDEO
+
+Here is a video with the implementation of our project:
+
+[Project Video](https://youtube.com/shorts/sMx07z7edAQ)
+
 ## REFERENCES
+
+We have used information available in information system as well as internet. Here are the links to visited websites:
+
+- [Joystick processing](https://create.arduino.cc/projecthub/MinukaThesathYapa/arduino-thumb-joystick-to-processing-92c182)
+-[Analog Joystick](https://exploreembedded.com/wiki/Analog_JoyStick_with_Arduino)
+-[Joystick description](https://navody.dratek.cz/navody-k-produktum/arduino-joystick-ps2.html)
+-[Rotary Encoder](https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/)
+-[Pmod Digilent](https://digilent.com/reference/pmod/pmodclp/start)
+
