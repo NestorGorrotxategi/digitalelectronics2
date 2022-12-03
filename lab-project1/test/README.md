@@ -116,7 +116,7 @@ So as to make LCD registers and commands easier, we are using a LCD library file
 - [Source file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd.c) lcd.c
 - [Lcd definitions](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/lib/lcd/lcd_definitions.h) lcd_definitions.h
 
-## MAIN
+### MAIN
 
 After defining libraries and timer files, we have created a main.c file inside src folder. Here is the main code of our project with includes, definitions, and functions:
 
@@ -126,11 +126,11 @@ Here are the flowcharts of the main function and ISRs of our project.
 
 ### int main()
 
-* initializes the LCD screen
-* configure the ADC
-* sets overflows for Timer1 and Timer2
-* enables interupts
-* sets infinite loop for working device
+* initializes the LCD screen.
+* configure the ADC.
+* sets overflows for Timer1 and Timer2.
+* enables interupts.
+* sets infinite loop for working device.
 
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/main.png)
 
@@ -139,7 +139,7 @@ Here are the flowcharts of the main function and ISRs of our project.
 
 ### ISR(Timer1)
 
-* Interupt service which switches the ADC channel every 100 ms
+* Interupt service which switches the ADC channel every 100 ms.
 
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/TIMER1.jpg)
 
@@ -148,9 +148,9 @@ Here are the flowcharts of the main function and ISRs of our project.
 
 ### ISR(Timer2)
 
-* Interupt service which overflows every 4 ms
-* Reads digital data sent by Encoder (Displays "Rear Camera" if you push the incoder. If not it displays acceleration or decelration depending on the sense of rotation)
-* Reads the pushbutton from the Joystick( Displays "BUZZER" if the button is pushed)
+* Interupt service which overflows every 4 ms.
+* Reads digital data sent by Encoder (Displays "REAR CAMERA" if you push the encoder. If not it displays acceleration or deceleration depending on the sense of rotation).
+* Reads the pushbutton from the Joystick( Displays "BUZZER" if the button is pushed).
 
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/TIMER2.png)
 
@@ -159,8 +159,8 @@ Here are the flowcharts of the main function and ISRs of our project.
 
 ### ISR(ADC_vect)
 
-* Interupt service which is responsible for displaying the direction accordingly to axis values of the joystick
-* Displays on the lcd the direction whick the joystick indicates(up-right, up-left, down-right ,down-left)
+* Interupt service which is responsible for displaying the direction accordingly to axis values of the joystick,
+* Displays on the lcd the direction whick the joystick indicates(up-right, up-left, down-right ,down-left),
 
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/flowcharts/ADC_vect.png)
 
