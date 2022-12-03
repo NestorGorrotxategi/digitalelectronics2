@@ -118,7 +118,7 @@ So as to make LCD registers and commands easier, we are using a LCD library file
 
 ### MAIN
 
-After defining libraries and timer files, we have created a main.c file inside src folder. Here is the main code of our project with includes, definitions, and functions:
+After defining libraries and timer files, we have created a main.c file inside ```src``` folder. Here is the main code of our project with includes, definitions, and functions:
 
 - [Main file](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/src/main.c) main.c
 
