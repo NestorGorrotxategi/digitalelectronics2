@@ -1,8 +1,8 @@
 # Project 1
-## Team members
+## TEAM MEMBERS
 - Nestor Gorrotxategi Agirre
 - Dragos Bratfalean
-## Hardware description
+## HARDWARE DESCRIPTION
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/Schematic.png)
 
 As we see in the picture above, we have used the following hardware for our project:
@@ -46,9 +46,32 @@ In our case, **Output A** has been connected to digital **pin 10** (PB2, CLK sig
 
 The **SW** button pin has been connected to digital **pin 12** (PB4) as an input.
 
+### Digilent PmodCLP LCD module
+
+The Digilent PmodCLP is a 16x2 character LCD used to display up to 32 different characters at a time. It uses a 8-bit parallel data interface for communication.
+
+For our project, we have used the following connections.
+
+For J1 bottom half pinout:
+- Pin 7: DB4 (PD4 pin 4 on Arduino Uno).
+- Pin 8: DB5 (PD5 pin 5 on Arduino Uno).
+- Pin 9: DB6 (PD6 pin 6 on Arduino Uno).
+- Pin 10: DB7 (PD7 pin 7 on Arduino Uno).
+
+For J2 pinout:
+- Pin 1: RS (PB0 pin 8 on Arduino Uno).
+- Pin 2: R/W (GND on breadboard).
+- Pin 3: E (PB1 pin 9 on Arduino Uno).
+- Pin 5: GND (GND on breadboard).
+- Pin 6: VCC (VCC on breadboard).
+
+### Breadboard
+
+It is a construction base used to create electronic circuits. In our project, we have used the breadboard to provide different modules with VCC from Arduino Uno and also offer GND.
 
 
-## Software description
+## SOFTWARE DESCRIPTION
+
 
 
 ### int main()
@@ -94,5 +117,5 @@ The **SW** button pin has been connected to digital **pin 12** (PB4) as an input
 
 
 
-## Video
-## References
+## VIDEO
+## REFERENCES
