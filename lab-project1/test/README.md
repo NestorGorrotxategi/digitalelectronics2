@@ -24,7 +24,11 @@ Our hardware has been connected to these pins, and we have used different regist
 
 ### Joystick
 
+![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/joystick%20image.jpg)
+
 The basic principle of the analog joystick is a set of two interconnected potentiometers which provide information about vertical (Y-axis) and horizontal (X-axis) movement. In addition, the joystick also comes with a Select switch.
+
+![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/joystick%20axis.avif)
 
 Apart from the VCC and GND pins for the Joystick which are connected to their corresponding pins in the breadboard, it has 3 other connections: 2 analog signals (Vrx for X and Vry for Y axis information) and a digital signal (switch). 
 
@@ -47,6 +51,8 @@ In our case, **Output A** has been connected to digital **pin 10** (PB2, CLK sig
 The **SW** button pin has been connected to digital **pin 12** (PB4) as an input.
 
 ### Digilent PmodCLP LCD module
+
+![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/Digilent_PmodCLP_30044294-01.jpg)
 
 The Digilent PmodCLP is a 16x2 character LCD used to display up to 32 different characters at a time. It uses a 8-bit parallel data interface for communication.
 
