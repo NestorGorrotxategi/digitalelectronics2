@@ -28,9 +28,9 @@ The basic principle of the analog joystick is a set of two interconnected potent
 
 Apart from the VCC and GND pins for the Joystick which are connected to their corresponding pins in the breadboard, it has 3 other connections: 2 analog signals (Vrx for X and Vry for Y axis information) and a digital signal (switch). 
 
-The first signals have to be processed by ADC channels. This is why Vrx and Vry have been connected respectively to A0 and A1 ADC channels on the Arduino board as we see on the scheme.
+The first signals have to be processed by ADC channels. This is why **Vrx** and **Vry** have been connected respectively to **A0** and **A1 ADC channels** on the Arduino board as we see on the scheme.
 
-As far as the switch connection is concerned, as it is a digital signal, it has been connected to digital pin 13 (PB5) as an input.
+As far as the **switch** connection is concerned, as it is a digital signal, it has been connected to **digital pin 13 (PB5)** as an input.
 
 ### Rotary encoder
 
@@ -40,9 +40,11 @@ Briefly, functioning of rotary encoders will be explained. The encoder has a dis
 
 When the disk rotates step by step, A and B pins make contact with the common pin, so two output signals will be generated. Comparing both signals we are able to know the rotated position of the encoder.
 
-In our case, Output A has been connected to digital pin 10 (PB2, CLK signal), while Output B is connected to digital pin 11 (PB3, DT signal). Both pins have been defined as input signals.
+![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/Rotary-Encoder-Arduino-Tutorial-Example.webp)
 
-The SW button pin has been connected to digital pin 12 (PB4) as an input.
+In our case, **Output A** has been connected to digital **pin 10** (PB2, CLK signal), while **Output B** is connected to digital **pin 11** (PB3, DT signal). Both pins have been defined as input signals.
+
+The **SW** button pin has been connected to digital **pin 12** (PB4) as an input.
 
 
 
