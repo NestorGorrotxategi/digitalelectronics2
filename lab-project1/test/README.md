@@ -3,6 +3,7 @@
 - Nestor Gorrotxategi Agirre
 - Dragos Bratfalean
 ## HARDWARE DESCRIPTION
+
 ![Image of all hardware](https://github.com/NestorGorrotxategi/digitalelectronics2/blob/main/lab-project1/Schematic.png)
 
 As we see in the picture above, we have used the following hardware for our project:
@@ -74,6 +75,16 @@ For J2 pinout:
 ### Breadboard
 
 It is a construction base used to create electronic circuits. In our project, we have used the breadboard to provide different modules with VCC from Arduino Uno and also offer GND.
+
+### IMPLEMENTATION
+
+We have thought about a simple and funny implementation for our project. With the given modules, we have created a program able to control direction and acceleration of a vehicle. Furthermore, we have added some extra features, such as a buzzer and a rear camera.
+
+First, we read the values of both Joystick and Encoder. If Joystick's push button is pressed, a buzzer activates and it is displayed on the LCD screen. Instead, if Encoder's push button is pressed, the rear camera activates and it is also displayed on screen.
+
+The Joystick is used to set a direction to the vehicle. Turning the Joystick, the direction in which the vehicle will move is displayed on screen.
+
+The encoder is used to decide if the vehicle is accelerating or deccelerating. If the encoder is turned clockwise, the vehicle will accelerate. Opposite, if the encoder is turned counter clockwise, the vehicle will slow down.
 
 
 ## SOFTWARE DESCRIPTION
